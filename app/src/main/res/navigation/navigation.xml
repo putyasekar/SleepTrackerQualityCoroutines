@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/trackingFragment"
-        android:name="com.putya.idn.sleeptrackerqualitycoroutines.TrackingFragment"
+        android:name="com.putya.idn.sleeptrackerqualitycoroutines.sleep_tracker.TrackingFragment"
         android:label="fragment_tracking"
         tools:layout="@layout/fragment_tracking" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/qualityFragment"
-        android:name="com.putya.idn.sleeptrackerqualitycoroutines.QualityFragment"
+        android:name="com.putya.idn.sleeptrackerqualitycoroutines.sleep_quality.QualityFragment"
         android:label="fragment_quality"
         tools:layout="@layout/fragment_quality" >
         <action

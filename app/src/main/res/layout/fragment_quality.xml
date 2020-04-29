@@ -1,93 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".QualityFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/tv_questions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_28"
-        android:text="@string/question"
-        android:textColor="#000"
-        android:textSize="@dimen/_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".sleep_quality.QualityFragment">
 
-    <ImageView
-        android:id="@+id/iv_zero_index"
-        android:layout_width="@dimen/__64"
-        android:layout_height="@dimen/__64"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/image_quality"
-        android:src="@drawable/ic_sleep_0"
-        app:layout_constraintEnd_toStartOf="@+id/iv_first_index"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_questions" />
+        <TextView
+            android:id="@+id/tv_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_28"
+            android:text="@string/question"
+            android:textColor="#000"
+            android:textSize="@dimen/_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/iv_first_index"
-        android:layout_width="@dimen/__64"
-        android:layout_height="@dimen/__64"
-        android:contentDescription="@string/image_quality"
-        android:src="@drawable/ic_sleep_1"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_zero_index"
-        app:layout_constraintEnd_toStartOf="@+id/iv_second_index"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/iv_zero_index"
-        app:layout_constraintTop_toTopOf="@+id/iv_zero_index" />
+        <ImageView
+            android:id="@+id/iv_zero_index"
+            android:layout_width="@dimen/__64"
+            android:layout_height="@dimen/__64"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/image_quality"
+            android:src="@drawable/ic_sleep_0"
+            app:layout_constraintEnd_toStartOf="@+id/iv_first_index"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_questions" />
 
-    <ImageView
-        android:id="@+id/iv_second_index"
-        android:layout_width="@dimen/__64"
-        android:layout_height="@dimen/__64"
-        android:contentDescription="@string/image_quality"
-        android:src="@drawable/ic_sleep_2"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_zero_index"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/iv_first_index"
-        app:layout_constraintTop_toTopOf="@+id/iv_zero_index" />
+        <ImageView
+            android:id="@+id/iv_first_index"
+            android:layout_width="@dimen/__64"
+            android:layout_height="@dimen/__64"
+            android:contentDescription="@string/image_quality"
+            android:src="@drawable/ic_sleep_1"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_zero_index"
+            app:layout_constraintEnd_toStartOf="@+id/iv_second_index"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_zero_index"
+            app:layout_constraintTop_toTopOf="@+id/iv_zero_index" />
 
-    <ImageView
-        android:id="@+id/iv_third_index"
-        android:layout_width="@dimen/__64"
-        android:layout_height="@dimen/__64"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/image_quality"
-        android:src="@drawable/ic_sleep_3"
-        app:layout_constraintEnd_toStartOf="@+id/iv_fourth_index"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_zero_index" />
+        <ImageView
+            android:id="@+id/iv_second_index"
+            android:layout_width="@dimen/__64"
+            android:layout_height="@dimen/__64"
+            android:contentDescription="@string/image_quality"
+            android:src="@drawable/ic_sleep_2"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_zero_index"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_first_index"
+            app:layout_constraintTop_toTopOf="@+id/iv_zero_index" />
 
-    <ImageView
-        android:id="@+id/iv_fourth_index"
-        android:layout_width="@dimen/__64"
-        android:layout_height="@dimen/__64"
-        android:contentDescription="@string/image_quality"
-        android:src="@drawable/ic_sleep_4"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_third_index"
-        app:layout_constraintEnd_toStartOf="@+id/iv_fifth_index"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/iv_third_index"
-        app:layout_constraintTop_toTopOf="@+id/iv_third_index" />
+        <ImageView
+            android:id="@+id/iv_third_index"
+            android:layout_width="@dimen/__64"
+            android:layout_height="@dimen/__64"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/image_quality"
+            android:src="@drawable/ic_sleep_3"
+            app:layout_constraintEnd_toStartOf="@+id/iv_fourth_index"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_zero_index" />
 
-    <ImageView
-        android:id="@+id/iv_fifth_index"
-        android:layout_width="@dimen/__64"
-        android:layout_height="@dimen/__64"
-        android:contentDescription="@string/image_quality"
-        android:src="@drawable/ic_sleep_5"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_third_index"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/iv_fourth_index"
-        app:layout_constraintTop_toTopOf="@+id/iv_third_index" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/iv_fourth_index"
+            android:layout_width="@dimen/__64"
+            android:layout_height="@dimen/__64"
+            android:contentDescription="@string/image_quality"
+            android:src="@drawable/ic_sleep_4"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_third_index"
+            app:layout_constraintEnd_toStartOf="@+id/iv_fifth_index"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_third_index"
+            app:layout_constraintTop_toTopOf="@+id/iv_third_index" />
+
+        <ImageView
+            android:id="@+id/iv_fifth_index"
+            android:layout_width="@dimen/__64"
+            android:layout_height="@dimen/__64"
+            android:contentDescription="@string/image_quality"
+            android:src="@drawable/ic_sleep_5"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_third_index"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_fourth_index"
+            app:layout_constraintTop_toTopOf="@+id/iv_third_index" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
